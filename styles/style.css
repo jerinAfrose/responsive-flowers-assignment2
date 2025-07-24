@@ -240,3 +240,39 @@ h2 {
 .join-form button:hover {
   background-color: #341401;
 }
+/* footer section styles */
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 5rem;
+  text-align: left;
+  align-items: flex-start;
+  margin: 2.8rem auto;
+}
+.footer-logo {
+  height: auto;
+  width: 40%;
+}
+.footer-left p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 1.5rem;
+}
+.footer-center {
+  display: flex;
+}
+.footer-nav-column ul li {
+  list-style: none;
+  margin: 30px auto;
+}
+.footer-nav-column ul a {
+  text-decoration: none;
+  color: rgba(107, 114, 128, 1);
+}
+.footer-right {
+  display: flex;
+  width: 10%;
+  height: 10%;
+  gap: 1.4rem;
+}
