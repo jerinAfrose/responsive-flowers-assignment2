@@ -66,6 +66,7 @@
   font-weight: 500;
   color: #8987a1;
 }
+
 /* banner styles */
 .banner {
   display: flex;
@@ -86,6 +87,8 @@
 }
 .banner-img {
   width: 100%;
+  height: auto;
+  display: block;
   padding: 0;
   margin: 0;
 }
@@ -135,6 +138,10 @@
   font-size: 1rem;
   border: none;
   color: white;
+  cursor: pointer;
+}
+.card-content button:hover {
+  background-color: #341401;
 }
 
 /* plant lover section styles */
@@ -157,6 +164,7 @@
   right: -100px;
   width: 250px;
   height: auto;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.5));
 }
 .lover-right {
   align-items: center;
@@ -174,4 +182,61 @@
 .lover-right li {
   margin-top: 50px;
   margin-left: 30px;
+}
+/* join section */
+.join {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/news-letter-bg.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  margin-top: 120px;
+}
+
+.join-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 30rem;
+}
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.join-form {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.join-form input[type="email"] {
+  padding: 15px 20px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  width: 30rem;
+  /* flex-grow: 1; */
+  /* max-width: 300px; */
+}
+.join-form button {
+  padding: 15px 30px;
+  background-color: #e95a08;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  column-span: 1;
+  /* transition: background-color 1s ease; */
+}
+.join-form button:hover {
+  background-color: #341401;
 }
