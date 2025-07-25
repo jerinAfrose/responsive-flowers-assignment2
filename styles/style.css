@@ -48,7 +48,7 @@
   padding: 0;
 }
 .logo img {
-  height: 50px;
+  height: 3.1rem;
   width: 20%;
 }
 .menu {
@@ -303,8 +303,6 @@ h2 {
   font-size: 1rem;
   outline: none;
   width: 30rem;
-  /* flex-grow: 1; */
-  /* max-width: 300px; */
 }
 .join-form button {
   padding: 15px 30px;
@@ -314,7 +312,6 @@ h2 {
   font-size: 1rem;
   cursor: pointer;
   column-span: 1;
-  /* transition: background-color 1s ease; */
 }
 .join-form button:hover {
   background-color: #341401;
@@ -354,4 +351,132 @@ h2 {
   width: 10%;
   height: 10%;
   gap: 1.4rem;
+}
+
+/* responsive styles for mobile */
+@media screen and (max-width: 576px) {
+  .menu-links {
+    display: none;
+  }
+  .logo img {
+    height: 2rem;
+    width: 3rem;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-img {
+    object-fit: cover;
+  }
+  .banner-title {
+    font-size: 24px;
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+  .banner-description {
+    font-size: 14px;
+    margin-top: 13px;
+    margin-bottom: 65px;
+  }
+  .plant-content {
+    margin-top: 0;
+  }
+  .plant-title {
+    font-size: 24px;
+  }
+  .plant-description {
+    font-size: 14px;
+    padding: 0;
+    text-align: center;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-content {
+    width: 100%;
+  }
+  .lover-content {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .badge-img {
+    display: none;
+  }
+  .lover-right {
+    align-items: flex-start;
+    justify-items: flex-start;
+    margin: 0;
+  }
+  .lover-right h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  .lover-right ul {
+    font-size: 14px;
+  }
+  .lover-right li {
+    margin-top: 16px;
+    margin-left: 0;
+  }
+  .deal-title {
+    font-size: 24px;
+    margin-top: 100px;
+  }
+  .deal-subtitle {
+    font-size: 14px;
+    margin: auto;
+  }
+  .box {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+  }
+  .join {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .join-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    max-width: 30rem;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .join-form {
+    grid-template-columns: 1fr 1fr;
+  }
+  .join-form input[type="email"] {
+    padding: 5px 10px;
+    width: 300px;
+  }
+  .join-form button {
+    padding: 5px 10px;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .footer-left p {
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .footer-center {
+    flex-direction: column;
+  }
+  .footer-nav-column ul li {
+    text-align: left;
+    margin: 20px auto;
+  }
+  .footer-nav-column ul a {
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+  }
+  .footer-right {
+    width: 50%;
+    height: 70%;
+  }
 }
